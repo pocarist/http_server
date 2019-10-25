@@ -10,5 +10,17 @@
 #define PCH_H
 
 // TODO: ここでプリコンパイルするヘッダーを追加します
+#include <memory>
+#include <string>
+#include <vector>
+#include <map>
+#include <sstream>
+#include <fstream>
+#include <iostream>
+#include <algorithm>
+#include <chrono>
+#include <thread>
+#include <future>
+#include <mutex>
 
 #endif //PCH_H

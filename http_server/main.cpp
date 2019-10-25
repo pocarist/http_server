@@ -3,10 +3,17 @@
 
 #include "pch.h"
 #include <iostream>
+#include "HttpServer.h"
 
 int main()
 {
     std::cout << "Hello World!\n"; 
+	auto server = CHttpServer_CreateInstance(L"http://localhost:5000/ediusrenderer/");
+	std::cout << "Start\n";
+	server->StartAsync().get();
+	for (;;)
+		;
+	return 0;
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
